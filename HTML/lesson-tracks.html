@@ -1,0 +1,29 @@
+<div id="lesson-tracks" class="snippet">
+    <h1>Lesson Tracks</h1>
+    <div><p>Students have the option of two tracks for learning: Recreational Piano, just for fun; and, Artist Preparatory, even more fun but more challenging as well
+            </p>
+    </div>
+    <button>Learn More</button>
+    <div id="p1-more" class="learn-m">
+        <h2>Recreational Piano</h2>
+        <p> 
+            This track is for those who just want to have fun, those who may have taken piano years ago and want to try again or brush up their skills, 
+            and those who don’t want any pressure to perform.  It’s for parents who are hoping their child will “take to” the piano and for adults 
+            who have always wanted to learn to play a few songs on the piano but never got around to it - until now. 
+        </p>
+        <br /><br />
+        <h2>Artist Preparatory</h2>
+        <p> 
+            This track is for students who are serious about learning, practicing, and performing, who envision themselves advancing beyond the beginner stage. 
+            It’s for those who want to learn to be musicians of depth, and who are willing to organize their time for effective practice and preparation for each lesson.
+        </p>
+        <br /><br />
+    </div>
+</div>
+<script>
+$(document).ready(function(){
+    $("#lesson-tracks button").click(function(){
+        $("#p1-more").toggle();
+    });
+});
+</script>

@@ -1,0 +1,50 @@
+
+body{
+  background-image: url("../Images/bryan_main.jpg");
+  background-size: 100%;
+}
+#welcome-btn{
+  display:block;
+  position: absolute;
+  left:33%;
+  top:33%;
+
+}
+#my-nav{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.nav-link{
+  font-size: 1.5em;
+}
+#main{
+  display:block;
+  width:auto;
+  height: auto;
+  min-height: 20em;
+  background-color:rgb(32, 32, 32);
+  color: azure;
+  opacity: 0.9;
+}
+#main > p,h1{
+  opacity: 1;
+}
+#main-div{
+  display: block;
+  justify-content: center;
+  /* margin-top: 20%; */
+  margin-right: auto;
+  margin-left: auto;
+  width: 66%;
+  display:none;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.snippet > div,h1,button{
+  margin: 2% 2% 2% 2%;
+}
+#a1-more,#a2-more,#a3-more,#a4-more,#a5-more,#a6-more,#a7-more,#a8-more,#f1-more{
+  display: none;
+}
