@@ -1,20 +1,51 @@
 
 body{
-  background-image: url("../Images/bryan_main.jpg");
-  background-size: 100%;
+  background-image: url("../Images/country_road_temp.jpg");
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  background-size: cover;
+}
+/* body, html {
+  height: 100%;
+  margin: 0;
+} */
+.div.bg{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  overflow: auto;
+}
+ #bg img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+} 
+.transparent{
+  opacity: 0;
 }
 #welcome-btn{
   display:block;
   position: absolute;
   left:33%;
   top:33%;
-
+  z-index: 2;
 }
 #my-nav{
   width: auto;
   display: flex;
   justify-content: center;
   margin-top: 10%;
+  background-color: black;
 }
 .nav-link{
   font-size: 1.5em;
@@ -32,19 +63,52 @@ body{
   opacity: 1;
 }
 #main-div{
+  position: absolute;
   display: block;
   justify-content: center;
   /* margin-top: 20%; */
+  left: 0;
+  right: 0;
   margin-right: auto;
   margin-left: auto;
   width: 66%;
   display:none;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
+  z-index: 2;
 }
 .snippet > div,h1,button{
   margin: 2% 2% 2% 2%;
 }
-#a1-more,#a2-more,#a3-more,#a4-more,#a5-more,#a6-more,#a7-more,#a8-more,#f1-more{
+/* #a3-more,#a4-more,#a5-more,#a6-more,#a7-more,#a8-more,#f1-more,#p1-more,#p2-more,#p3-more,#p4-more,#p5-more{
   display: none;
+} */
+
+button {
+  background-color: #4CAF50; /* Green */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.btn-primary{
+  background-color: #4CAF50;
+  border: none;
+}
+.btn-primary:hover{
+  background-color: #4CAF50;
+  border: none;
+}
+hr{
+  background-color:white;
+  margin-left:2%;
+  margin-right:2%;
+}
+
+
+#studio-img{
+  width:300px;
+  height:auto;
+  margin:3em;
 }

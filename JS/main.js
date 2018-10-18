@@ -12,6 +12,8 @@ $(document).ready(function(){
     $("#welcome-btn").click(function(){
         $("#welcome-btn").toggle();
         $("#main-div").toggle();
+        $("#bg img").toggleClass("transparent");
+        $("#main").load("HTML/about-bryan.html");
     });
     $("#a1").click(function(){
         $("#main").load("HTML/about.html");
